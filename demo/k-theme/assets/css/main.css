@@ -1,0 +1,486 @@
+/* TABLE OF CONTENTS
+------------------------------------------------------------
+* Global
+* Home
+* Theme
+* Document
+------------------------------------------------------------ */
+
+
+/* Global
+------------------------------------------------------------ */
+
+/* No margin */
+.nomargin {
+	margin: 0;
+}
+
+/* Image shadow */
+.wp-block-image img {
+	border: solid 1px #e0e0e0;
+	box-shadow: 0 0 8px rgba( 0, 0, 0, 0.15 );
+}
+.noshadow img {
+	border: none;
+	box-shadow: none;
+}
+
+/* Price Table */
+.price-table .wp-block-column {
+	background-color: #f4f5f6;
+	font-size: 95%;
+	margin-bottom: 0.9em;
+	padding: 2em;
+}
+.price-table .price {
+	color: #111;
+	font-size: 3rem;
+	margin-bottom: 1.8rem;
+	text-indent: -0.2em;
+}
+.price-table .price:first-letter {
+	font-size: 2rem;
+}
+.price-table table th,
+.price-table table td {
+	border-left: none;
+	border-right: none;
+	border: none;
+	padding: 0.6em 0;
+	vertical-align: top;
+}
+.price-table table th {
+	background: none;
+	font-weight: 500;
+	padding-right: 1em;
+	white-space: nowrap;
+}
+@media screen and (min-width: 600px) {
+	.price-table .wp-block-column:not(:last-child) {
+		margin-right: 10px;
+	}
+	.price-table .wp-block-column:not(:first-child) {
+		margin-left: 10px;
+	}
+	.price-table .wp-block-column:last-child {
+		margin-right: 0;
+	}
+}
+
+/* Form */
+.wpcf7-form {
+	margin-top: 4rem;
+}
+.wpcf7-form .form-submit {
+	margin-top: 2.6em;
+}
+@media screen and (min-width: 600px) {
+	.form-label {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+	.form-label label {
+		width: 23%;
+	}
+	.form-label span {
+		width: 72%;
+	}
+	.form-label span input,
+	.form-label span select {
+		width: 100%;
+		margin-top: 0;
+	}
+	.form-textarea {
+		margin-bottom: 1.2em;
+		margin-top: 2.2em;
+	}
+}
+
+/* Mail Chimp */
+.mc-text {
+	margin-bottom: 0.6em;
+}
+.mc-submit {
+	margin-top: 1.4em;
+}
+
+/* Footer Widget */
+@media screen and (max-width: 979px) {
+	.footer-widget-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footer-widget {
+		box-sizing: border-box;
+		width: 50%;
+	}
+	.footer-widget-1 {
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+	.footer-widget-2 {
+		padding-right: 30px;
+	}
+}
+
+/* Footer */
+.site-bottom {
+	background-color: #fff !important;
+}
+.site-info {
+	float: none;
+	text-align: center;
+}
+
+
+/* Home
+------------------------------------------------------------ */
+
+/* Theme */
+.home-theme {
+	align-items: center;
+}
+.home-theme .wp-block-column:last-child {
+	margin-top: -1rem;
+}
+.theme-businesspress-small {
+	font-family: source-serif-pro;
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+/* Profile */
+.home-profile-photo img {
+	border-radius: 50%;
+}
+.home-profile-name {
+	margin-bottom: 6px;
+}
+.home-profile-text {
+	font-size: 95%;
+}
+
+
+/* Theme
+------------------------------------------------------------ */
+
+/* Title */
+.theme-businesspress {
+	font-family: source-serif-pro;
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Buttons */
+.theme-buttons {
+	margin-bottom: 5rem;
+	text-align: center;
+}
+.theme-demos,
+.theme-downloads {
+	display: inline-block;
+}
+.theme-demos {
+	margin-right: 10px;
+}
+.theme-downloads {
+	margin-left: 10px;
+}
+.theme-button {
+	border: solid 2px #111;
+	border-radius: 25px;
+	color: #111;
+	display: inline-block;
+	font-size: 100%;
+	font-weight: 600;
+	padding: 8px 25px;
+	text-decoration: none;
+}
+.theme-demo:hover {
+	border-color: #777;
+	color: #777;
+}
+.theme-download {
+	border-color: #4693f5;
+	background: #4693f5;
+	color: #fff;
+}
+.theme-download:hover {
+	border-color: #639af6;
+	background: #639af6;
+	color: #fff;
+}
+.theme-button-sub {
+	color: #333;
+	border-bottom: solid 2px #ddd;
+	display: inline-block;
+	font-size: 90%;
+	font-weight: 600;
+	margin-top: 1.5rem;
+	text-decoration: none;
+}
+.theme-button-sub:hover {
+	color: #777;
+	border-color: #ddd;
+}
+@media screen and (min-width: 782px) {
+	.theme-buttons {
+		margin-bottom: 6rem;
+	}
+	.theme-demos {
+		margin-right: 20px;
+	}
+	.theme-downloads {
+		margin-left: 20px;
+	}
+}
+
+/* Meta */
+.theme-meta {
+	background-color: #F4F6F8;
+	box-sizing: border-box;
+	margin-bottom: 5rem;
+	padding: 25px 20px 5px 20px;
+}
+.theme-meta ul {
+	line-height: 2;
+	list-style: none;
+	margin: 0;
+}
+.theme-meta li {
+	display: inline-block;
+	font-size: 85%;
+	margin: 0 30px 20px 0;
+}
+@media screen and (min-width: 782px) {
+	.theme-meta {
+		margin-bottom: 8rem;
+		padding: 35px 40px 15px 40px;
+	}
+	.theme-meta li {
+		margin-right: 45px;
+	}
+	.theme-meta li:last-child {
+		margin-right: 0;
+	}
+}
+
+/* Features */
+.theme-features .wp-block-columns {
+	font-size: 95%;
+	margin-bottom: 4rem;
+}
+.theme-features .wp-block-columns:last-child {
+	margin-bottom: 0;
+}
+.theme-features .wp-block-columns .wp-block-column {
+	margin-bottom: 0.9em;
+}
+@media screen and (min-width: 782px) {
+	.theme-features .wp-block-columns {
+		align-items: center;
+		font-size: 90%;
+		justify-content: space-between;
+		margin-bottom: 8rem;
+	}
+	.theme-features .wp-block-columns .wp-block-column:first-child {
+		flex-basis: 30%;
+	}
+	.theme-features .wp-block-columns .wp-block-column:last-child {
+		flex-basis: 60%;
+	}
+	.theme-features .wp-block-columns:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	.theme-features .wp-block-columns:nth-child(even) .wp-block-column:not(:last-child) {
+		margin-left: 32px;
+		margin-right: 0;
+	}
+	.theme-features .wp-block-columns:nth-child(even) .wp-block-column:not(:first-child) {
+		margin-left: 0;
+		margin-right: 32px;
+	}
+}
+
+/* Download */
+.theme-download-overlay {
+	background-color: rgba( 0, 0, 0, 0.3 );
+	display: none;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 200;
+}
+.theme-download-content-wrapper {
+	background: #fff;
+	height: 80vh;
+	left: 0;
+	overflow-y: auto;
+	max-height: 700px;
+	max-width: 600px;
+	position: fixed;
+	right: 0;
+	top: -80vh;
+	transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	width: 85%;
+	z-index: 201;
+	margin: auto;
+}
+.theme-download-opened .theme-download-overlay {
+	display: block;
+}
+.theme-download-opened .theme-download-content-wrapper {
+	box-shadow: 0 0 90px rgba(0, 0, 0, 0.2);
+	bottom: 0;
+	top: 0;
+}
+.theme-download-content {
+	box-sizing: border-box;
+	height: 100%;
+	overflow-y: auto;
+	padding: 4rem 3rem;
+	width: 100%;
+	text-align: center;
+}
+.theme-download-content h3 {
+	margin-bottom: 4rem;
+}
+.theme-download-content *:last-child {
+	margin-bottom: 0;
+}
+.share-buttons {
+	margin: 3rem 0 3rem;
+	text-align: center;
+}
+.share-button {
+	background-color: #111;
+	border-radius: 10px;
+	color: #fff;
+	display: inline-block;
+	font-size: 90%;
+	font-weight: 600;
+	margin: 0 5px 15px 5px;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+.share-button:hover {
+	color: #fff;
+	opacity: 0.9;
+}
+.share-button:before {
+	color: #fff;
+	display: inline-block;
+	font: normal 20px/1 FontAwesome;
+	-webkit-font-smoothing: antialiased;
+	margin-right: 0;
+	position: relative;
+	top: 1px;
+	vertical-align: middle;
+}
+.share-button span {
+	display: none;
+}
+.share-twitter {
+	background-color: #309DF2;
+}
+.share-twitter:before {
+	content: "\F099";
+}
+.share-facebook {
+	background-color: #4964B2;
+}
+.share-facebook:before {
+	content: "\F230";
+}
+.share-hatena {
+	background-color: #1BA1DE;
+}
+.share-hatena:before {
+	content: "B!";
+	font-family: Verdana;
+	font-weight: bold;
+}
+@media screen and (min-width: 782px) {
+	.theme-download-content {
+		padding: 7rem 5rem;
+	}
+	.share-button {
+		border-radius: 25px;
+		padding: 10px 27px;
+	}
+	.share-button:before {
+		margin-right: 6px;
+		top: -1px;
+	}
+	.share-facebook:before {
+		margin-right: 10px;
+	}
+	.share-hatena:before {
+		top: -2px;
+	}
+	.share-button span {
+		display: inline-block;
+	}
+}
+
+
+/* Document
+------------------------------------------------------------ */
+
+/* General */
+.document h2 {
+	margin-top: 6rem;
+}
+.document .wp-block-image {
+	margin-bottom: 2.5em;
+	margin-top: 2.5em;
+}
+.document .wp-block-image figcaption {
+	margin-top: 1.5em;
+}
+
+/* TOC */
+.toc {
+	background: #F4F6F8;
+	font-size: 95%;
+	padding: 1.8em 2em 0.4em 2em;
+}
+.toc li {
+	margin: 0.4em 0;
+}
+.toc a {
+	color: #666;
+	text-decoration: none;
+}
+.toc a:hover {
+	color: #111;
+}
+
+/* Note */
+.note {
+	background: #F4F6F8;
+	font-size: 95%;
+	padding: 1.8em 2em;
+}
+
+
+/* Customize
+------------------------------------------------------------ */
+
+@media screen and (min-width: 782px) {
+	.wp-block-columns.customize-example {
+		flex-direction: row-reverse;
+	}
+	.wp-block-columns.customize-example .wp-block-column:first-child {
+		margin-left: 48px;
+		margin-right: 0;
+	}
+	.wp-block-columns.customize-example .wp-block-column:last-child {
+		margin-left: 0;
+	}
+}
