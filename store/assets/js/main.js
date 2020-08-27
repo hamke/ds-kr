@@ -14,7 +14,7 @@ for (t = 0; t < post_mm.length; t++) {
 }
 
 $(document).ready(function() {
-  var email_value = 'hello' + '@' + 'wp-talk' + '.com';
+  var email_value = 'hello' + '@' + 'mkttalk' + '.com';
   $('#email-info').html(email_value);
 });
 
