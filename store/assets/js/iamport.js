@@ -1,6 +1,7 @@
 var IMP = window.IMP; // 생략가능
 // IMP.init('imp21028697'); // hello@wp-talk.com
-IMP.init('imp14840138'); // leden_online@naver.com
+// IMP.init('imp14840138'); // leden_online@naver.com
+IMP.init('imp90524050'); // the235style@yahoo.com
 
 function pay() {
 
@@ -16,10 +17,10 @@ function pay() {
   }
 
   IMP.request_pay({
-    amount : 10,
-    // amount : product_amount,
+    // amount : 10000,
+    amount : product_amount,
   	buyer_name : '게스트(비회원)',
-  	name : '워드프레스 상품 05'
+  	name : '디소스 #05'
     // pg: 'inicis', // version 1.1.0부터 지원.
     // pay_method: 'card',
     // merchant_uid: 'merchant_' + new Date().getTime(),
