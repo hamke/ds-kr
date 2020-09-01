@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>KakaoPay Link Generator - Desource</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./../../assets/img/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./../../assets/css/bootstrap/4.3.1/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./../../assets/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./../../assets/css/font-awesome-animation.min.css">
+  <link rel="stylesheet" type="text/css" href="./../assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/file-upload.css">
+  <script src="./../../assets/js/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./../../assets/js/bootstrap/4.3.1/bootstrap.bundle.min.js"></script>
+
+  <!-- Global site tag (gtag.js; XXXXXXXXXX) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXXX-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXXXXX-1');
+  </script>
+  <!-- Naver Analytics(XXXXXXXXXX): Start -->
+  <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+  <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "XXXXXXXXXX";
+    if(window.wcs) {wcs_do();}
+  </script>
+  <!-- Naver Analytics: End -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand font-weight-bold" href="./../">
+          <img src="https://hellotblog.files.wordpress.com/2019/08/kaplan-logo-round-02-120x120.png" width="23" height="23" class="d-none d-lg-inline align-top" alt="WP-TALK.COM">
+          <span>Desource</span>
+          <sup class="d-none d-sm-inline" style="top:-1em;font-size:50%;"><i>BETA</i></sup>
+        </a>
+      </nav>
+
+      <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active dropdown">
+            <a class="nav-link pl-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" glot-model="lang-select">
+              Useful Links <span class="badge badge-danger align-text-top">NEW</span>
+            </a>
+            <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.wp-data.com/kr/" target="_blank">WordPress Analytics</a>
+              <a class="dropdown-item" href="https://www.wpsalenow.com/kr/" target="_blank">WordPress Sale Now</a>
+              <a class="dropdown-item" href="http://www.wp-viewer.com/kr/" target="_blank">WordPress Viewer</a>
+              <a class="dropdown-item" href="https://news.wp-kr.com/" target="_blank">WP-KR News</a>
+              <!-- <a class="dropdown-item" href="./kr/analytics/" id="ko" glot-model="kr">Korean</a> -->
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-3" href="https://www.desource.kr/kakao/" target="_blank">
+              KakaoTalk
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Content : Start -->
+
+  <style>
+    form #human-check {
+      display: none;
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.file-upload').file_upload();
+    });
+  </script>
+
+  <div class="container pt-5">
+
+    <div class="row mt-5 mb-4">
+
+      <div class="col-12 text-center">
+
+        <div class="mb-4">
+          <a href="./">
+            <img src="https://hellotblog.files.wordpress.com/2019/03/kakaopay-logo-120x120.png" style="width:80px; border-radius:50%;" alt="" class="shadow">
+          </a>
+        </div>
+
+        <div class="mb-4">
+          <h4>카카오페이 QR코드 모바일 링크(수신용) 생성 서비스</h4>
+        </div>
+
+        <form id="inputForm" class="form-horizontal mb-3" method="POST" action="./process.php" enctype="multipart/form-data" role="form">
+          <div class="">
+            <label class="file-upload btn btn-dark">
+              1. 이미지 파일을 선택해 주세요 <input type="file" id="kakaopay_image" name="kakaopay_image" required />
+            </label>
+            <input type="text" name="human-check" id="human-check">
+            <a href="javascript:void(0)" onclick="pay()" class="btn btn-danger" style="margin-bottom:0.5rem;">
+              <i class="fas fa-bolt"></i> 구입 및 다운로드
+            </a>
+            <!-- <input type="submit" name="submit" value="2. 업로드 및 작업 진행" class="btn btn-danger" style="margin-bottom:0.5rem;"> -->
+          </div>
+        </form>
+
+        <!-- <form id="inputForm" class="form-horizontal mb-3" method="POST" action="./process.php" enctype="multipart/form-data" role="form">
+
+          <div class="">
+            <label class="file-upload btn btn-dark">
+              1. 이미지 파일을 선택해 주세요 <input type="file" id="kakaopay_image" name="kakaopay_image" required />
+            </label>
+            <input type="text" name="human-check" id="human-check">
+            <input type="submit" name="submit" value="2. 업로드 및 작업 진행" class="btn btn-danger" style="margin-bottom:0.5rem;">
+          </div>
+
+        </form> -->
+
+        <div class="mb-4 bg-light text-center col-lg-8 mx-auto">
+          <div class="ajax-return">
+
+            <!-- <div class="py-3">
+              <b>카카오페이 모바일 링크</b>를 생성해 보세요
+            </div> -->
+
+          </div>
+        </div>
+
+        <div class="comment mb-4 text-center">
+          <p>
+            <i class="fas fa-check"></i>
+            <a href="https://www.mkttalk.com/kakaopay-qrcode/" target="_blank" style="text-decoration:none;">
+              <b>카카오페이 QR코드 이미지 다운로드 방법</b> : 자세히 보기
+            </a>
+          </p>
+          <p>
+            <i class="fas fa-check"></i> 본 서비스는 계정당 1회만 이용 가능합니다
+          </p>
+        </div>
+
+        <script type="text/javascript">
+          // AJAX ...
+        </script>
+
+      </div>
+
+    </div> <!-- .row -->
+
+  </div> <!-- .container -->
+
+  <!-- Content : End -->
+
+  <div class="container footer-message py-4 border-top">
+    <div class="row">
+      <div class="col-12 text-center">
+        상품 구입 후 7일 내에 환불 가능합니다. (복제 불가능한 상품 해당)
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4 border-top">
+    <div class="row">
+      <div class="col-12 col-md-4 text-center">
+        <section class="pt-3">
+          <p class="font-weight-bold" style="font-size:18px;">WordPress Analytics</p>
+          <div class="textwidget">
+            <p class="">
+              <a href="https://www.wp-data.com/kr/" target="_blank" rel="noopener noreferrer">
+                www.wp-data.com
+              </a>
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <section class="pt-3">
+          <p class="font-weight-bold" style="font-size:18px;">WordPress Sale Now</p>
+          <div class="textwidget">
+            <p class="">
+              <a href="https://www.wpsalenow.com/kr/" target="_blank" rel="noopener noreferrer">
+                www.wpsalenow.com
+              </a>
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <section class="pt-3">
+          <p class="font-weight-bold" style="font-size:18px;">WordPress Viewer</p>
+          <div class="textwidget">
+            <p class="">
+              <a href="http://www.wp-viewer.com/kr/" target="_blank" rel="noopener noreferrer">
+                www.wp-viewer.com
+              </a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="shadow footer mt-2 bg-transparent">
+
+    <div class="container business-info pt-4 text-center" style="font-size:0.9rem; opacity:0.7;">
+      상호명: 레덴벤처스 | 사업자번호: 211-10-43189 | 대표자: 이상호 | 개인정보담당자: 이혜주 | 주소: 서울시 은평구 서오릉로 94 삼성타운아파트 102-1901 |
+      전화번호: 070-4906-9888 | 이메일: <span id="email-info"></span> | 통신판매신고업등록번호: 제2014-서울강남-00913호
+    </div>
+
+    <div class="container footer-text text-center py-4 text-secondary">
+      © <span class="post-year"></span> <a class="text-secondary" href="https://www.desource.kr/" target="_blank"><b>디소스 (Desource)</b></a> | <a href="./../terms/" id="terms" target="_blank">이용약관</a> | <a href="./../privacy/" id="privacy" target="_blank">개인정보취급방침</a>
+    </div>
+
+  </div>
+
+  <a id="chat-button" href="https://www.desource.kr/kakao/" target="_blank" style="">
+  	<img src="https://hellotblog.files.wordpress.com/2019/07/kakaotalk-chat-button-100x100.png">
+  </a>
+
+  <a id="back-to-top" href="#" class="" title="Go To Top"><i class="fas fa-chevron-up"></i></a>
+
+  <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+  <script src="./assets/js/process-iamport.js"></script>
+    <!-- <script src="./assets/js/process-ajax.js"></script> -->
+  <script src="./../assets/js/main.js"></script>
+  <script src="./assets/js/file-upload.js"></script>
+
+</body>
+
+</html>
