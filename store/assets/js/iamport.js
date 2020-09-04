@@ -5,6 +5,7 @@ IMP.init('imp90524050'); // the235style@yahoo.com
 
 function pay() {
 
+  var product_name = document.getElementById('product-name').innerHTML;
   var product_price = document.getElementById('price');
   var product_option = document.getElementById('selectBox');
 
@@ -20,7 +21,7 @@ function pay() {
     // amount : 10000,
     amount : product_amount,
   	buyer_name : '게스트(비회원)',
-  	name : '디소스 #05'
+  	name : product_name
     // pg: 'inicis', // version 1.1.0부터 지원.
     // pay_method: 'card',
     // merchant_uid: 'merchant_' + new Date().getTime(),
