@@ -14,7 +14,9 @@
   <link rel="stylesheet" type="text/css" href="./../assets/css/bootstrap/4.3.1/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./../assets/css/all.css">
   <link rel="stylesheet" type="text/css" href="./../assets/css/font-awesome-animation.min.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./assets/css/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="./../assets-layout/css/main.css">
+  <link rel="stylesheet" type="text/css" href="./../assets-layout/css/navbar.css">
   <script src="./../assets/js/jquery/3.2.1/jquery.min.js"></script>
   <script src="./../assets/js/bootstrap/4.3.1/bootstrap.bundle.min.js"></script>
   <!-- Global site tag (gtag.js; DESOURCE.KR) - Google Analytics -->
@@ -36,55 +38,114 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
-    <div class="container">
+  <header id="masthead" class="site-header" role="banner">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-offcanvas navbar-light" style="padding:.74rem 1rem;">
 
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand font-weight-bold" href="./">
-          <img src="https://hellotblog.files.wordpress.com/2019/08/kaplan-logo-round-02-120x120.png" width="23" height="23" class="d-none d-lg-inline align-top" alt="WP-TALK.COM">
-          <span>Desource</span>
-          <sup class="d-none d-sm-inline" style="top:-1em;font-size:50%;"><i>Beta</i></sup>
-        </a>
-      </nav>
+      <div class="container-fluid">
 
-      <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="row w-100 mx-auto">
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active dropdown">
-            <a class="nav-link pl-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" glot-model="lang-select">
-              Useful Links <span class="badge badge-danger align-text-top">NEW</span>
+          <div class="col-2 col-lg-3 my-auto px-0">
+
+            <button class="navbar-toggler d-inline border-0" type="button" id="navToggle">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <span class="nav-link d-none d-lg-inline px-2">
+              <a href="#">
+                <!-- 최신 정보 공유 커뮤니티 -->
+              </a>
+            </span>
+
+          </div>
+
+          <div class="col-8 col-lg-6 my-auto">
+
+          <div class="text-center py-1">
+            <!-- Brand Logo -->
+            <a class="navbar-brand site-title d-inline mx-auto" href="./../../">
+              <img src="https://hellotblog.files.wordpress.com/2019/08/kaplan-logo-round-02-120x120.png" width="23" height="23" class="d-inline align-top mr-1" alt="">
+              <span class="font-weight-bold" style="letter-spacing:2px;">DESOURCE</span>
+              <sup class="d-none d-sm-inline" style="top:-1em;font-size:50%;"><i>Beta</i></sup>
             </a>
-            <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://www.wp-data.com/kr/" target="_blank">WordPress Analytics</a>
-              <a class="dropdown-item" href="https://www.wpsalenow.com/kr/" target="_blank">WordPress Sale Now</a>
-              <a class="dropdown-item" href="http://www.wp-viewer.com/kr/" target="_blank">WordPress Viewer</a>
-              <a class="dropdown-item" href="https://news.wp-kr.com/" target="_blank">WP-KR News</a>
-              <!-- <a class="dropdown-item" href="./../kr/analytics/" id="ko" glot-model="kr">Korean</a> -->
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pl-3" href="https://www.desource.kr/kakao/" target="_blank">
-              KakaoTalk
-            </a>
-          </li>
-        </ul>
-      </div>
+          </div>
+
+        </div>
+
+        <div class="col-2 col-lg-3 my-auto">
+
+          <div class="navbar-links text-right">
+
+            <div id="main-nav" class="main-nav d-none d-lg-inline-block pr-4">
+              <ul id="menu-account-links" class="navbar-nav">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+                  <a title="홈" href="#" class="nav-link">
+                    홈
+                  </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+                  <a title="카카오톡 문의" href="https://www.wp-talk.com/kakao/" class="nav-link" target="_blank">
+                    카카오톡 문의
+                  </a>
+                </li>
+               </ul>
+             </div>
+
+          </div>
+
+        </div>
+
+      </div> <!-- .row -->
 
     </div>
+
+    <!-- <div class="container-fluid searchbardiv pt-3 pb-4 border-bottom" id="formsearch">
+      <form role="search" method="get" id="searchform" action="#">
+        <div class="input-group container">
+          <input type="text" id="searchbox" class="form-control text-center" name="s" id="s" placeholder="검색어를 입력해 주세요" required >
+          <div class="input-group-btn ml-1">
+            <button class="btn btn-default" id="searchsubmit" type="submit">
+              <strong>검색</strong>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <button type="button" class="buttonsearch" id="buttonsearch">
+      <i class="fas fa-search openclosesearch"></i><i class="fas fa-times openclosesearch" style="display:none"></i>
+    </button> -->
+
   </nav>
 
-  <div class="container pt-5">
+  <div class="sidebar navbar-light navbar-collapse offcanvas-collapse bg-white pl-5 shadow">
+    <div id="main-nav" class="menu-main-container">
+      <ul id="menu-main" class="navbar-nav mr-auto pt-3">
+        <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+          <a title="홈" href="./../" class="nav-link">
+            홈
+          </a>
+        </li>
+        <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+          <a title="카카오톡 문의" href="https://www.wp-talk.com/kakao/" target="_blank" class="nav-link">
+            카카오톡 문의
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div> <!-- .sidebar -->
 
-    <div class="d-flex justify-content-center pt-5 pb-2 sunshine">
+ </header>
+
+  <div class="container">
+
+    <div class="d-flex justify-content-center pt-4 pb-3 sunshine">
       <a href="./">
-        <img src="https://hellotblog.files.wordpress.com/2019/08/kaplan-logo-round-02-120x120.png" style="width:70px;" alt="WP-TALK.COM">
+        <img src="https://hellotblog.files.wordpress.com/2020/08/wptalk-logo-girl-round-01-120x120-1.png" style="width:70px;" alt="WP-TALK.COM">
       </a>
     </div>
 
-    <div class="text-center pb-2">
+    <div class="text-center pb-3">
       <a href="https://www.desource.kr/" target="_blank" style="color:initial;"><i class="fas fa-heart"></i></a> 원하는 <strong>디자인 소스 / 템플릿 / 아이템</strong>을 선택해 주세요
     </div>
 
@@ -396,6 +457,7 @@
 
   <!-- <script src="./assets/js/overlay.js"></script> -->
   <script src="./assets/js/main.js"></script>
+  <script src="./../assets-layout/js/navbar.js"></script>
 
 </body>
 
