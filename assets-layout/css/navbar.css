@@ -170,7 +170,7 @@ button:focus,
   transition-timing-function: ease-in-out;
   transition-duration: .3s;
   transition-property: left, visibility;
-  z-index: 1000;
+  z-index: 1025;
 }
 
 .offcanvas-collapse {
