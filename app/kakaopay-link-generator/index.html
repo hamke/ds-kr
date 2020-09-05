@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,7 +10,8 @@
   <link rel="stylesheet" type="text/css" href="./../../assets/css/bootstrap/4.3.1/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./../../assets/css/all.css">
   <link rel="stylesheet" type="text/css" href="./../../assets/css/font-awesome-animation.min.css">
-  <link rel="stylesheet" type="text/css" href="./../assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="./../../assets-layout/css/main.css">
+  <link rel="stylesheet" type="text/css" href="./../../assets-layout/css/navbar.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/file-upload.css">
   <script src="./../../assets/js/jquery/3.2.1/jquery.min.js"></script>
   <script src="./../../assets/js/bootstrap/4.3.1/bootstrap.bundle.min.js"></script>
@@ -35,45 +35,109 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
-    <div class="container">
+  <header id="masthead" class="site-header" role="banner">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-offcanvas navbar-light" style="padding:.74rem 1rem;">
 
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand font-weight-bold" href="./../../">
-          <img src="https://hellotblog.files.wordpress.com/2019/08/kaplan-logo-round-02-120x120.png" width="23" height="23" class="d-none d-lg-inline align-top" alt="WP-TALK.COM">
-          <span>Desource</span>
-          <sup class="d-none d-sm-inline" style="top:-1em;font-size:50%;"><i>BETA</i></sup>
-        </a>
-      </nav>
+      <div class="container-fluid">
 
-      <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="row w-100 mx-auto">
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active dropdown">
-            <a class="nav-link pl-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" glot-model="lang-select">
-              Useful Links <span class="badge badge-danger align-text-top">NEW</span>
+          <div class="col-2 col-lg-3 my-auto px-0">
+
+            <button class="navbar-toggler d-inline border-0" type="button" id="navToggle">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <span class="nav-link d-none d-lg-inline px-2">
+              <a href="#">
+                <!-- 최신 정보 공유 커뮤니티 -->
+              </a>
+            </span>
+
+          </div>
+
+          <div class="col-8 col-lg-6 my-auto">
+
+          <div class="text-center py-1">
+            <!-- Brand Logo -->
+            <a class="navbar-brand site-title d-inline mx-auto" href="./../../">
+              <img src="https://hellotblog.files.wordpress.com/2020/09/icon-heart-handcraft-01-120x120-1.png" width="23" height="23" class="d-inline align-top mr-1" alt="">
+              <span class="font-weight-bold" style="letter-spacing:2px;">DESOURCE</span>
+              <sup class="d-none d-sm-inline" style="top:-1em;font-size:50%;"><i>Beta</i></sup>
             </a>
-            <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://www.wp-data.com/kr/" target="_blank">WordPress Analytics</a>
-              <a class="dropdown-item" href="https://www.wpsalenow.com/kr/" target="_blank">WordPress Sale Now</a>
-              <a class="dropdown-item" href="http://www.wp-viewer.com/kr/" target="_blank">WordPress Viewer</a>
-              <a class="dropdown-item" href="https://news.wp-kr.com/" target="_blank">WP-KR News</a>
-              <!-- <a class="dropdown-item" href="./kr/analytics/" id="ko" glot-model="kr">Korean</a> -->
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pl-3" href="https://www.desource.kr/kakao/" target="_blank">
-              KakaoTalk
-            </a>
-          </li>
-        </ul>
-      </div>
+          </div>
+
+        </div>
+
+        <div class="col-2 col-lg-3 my-auto">
+
+          <div class="navbar-links text-right">
+
+            <div id="main-nav" class="main-nav d-none d-lg-inline-block pr-4">
+              <ul id="menu-account-links" class="navbar-nav">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+                  <a title="홈" href="./../../" class="nav-link">
+                    홈
+                  </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+                  <a title="카카오톡 문의" href="https://www.desource.kr/kakao/" class="nav-link" target="_blank">
+                    카카오톡 문의
+                  </a>
+                </li>
+               </ul>
+             </div>
+
+          </div>
+
+        </div>
+
+      </div> <!-- .row -->
 
     </div>
+
+    <!-- <div class="container-fluid searchbardiv pt-3 pb-4 border-bottom" id="formsearch">
+      <form role="search" method="get" id="searchform" action="#">
+        <div class="input-group container">
+          <input type="text" id="searchbox" class="form-control text-center" name="s" id="s" placeholder="검색어를 입력해 주세요" required >
+          <div class="input-group-btn ml-1">
+            <button class="btn btn-default" id="searchsubmit" type="submit">
+              <strong>검색</strong>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <button type="button" class="buttonsearch" id="buttonsearch">
+      <i class="fas fa-search openclosesearch"></i><i class="fas fa-times openclosesearch" style="display:none"></i>
+    </button> -->
+
   </nav>
+
+  <div class="sidebar navbar-light navbar-collapse offcanvas-collapse bg-white pl-5 shadow">
+    <div id="main-nav" class="menu-main-container">
+      <div class="pt-3 text-center">
+        <a href="./../../">
+          <img src="https://hellotblog.files.wordpress.com/2020/09/icon-heart-handcraft-01-120x120-1.png" style="width:50px;" alt="">
+        </a>
+      </div>
+      <ul id="menu-main" class="navbar-nav mr-auto pt-3">
+        <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+          <a title="홈" href="./../../" class="nav-link">
+            홈
+          </a>
+        </li>
+        <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66 nav-item">
+          <a title="카카오톡 문의" href="https://www.desource.kr/kakao/" target="_blank" class="nav-link">
+            카카오톡 문의
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div> <!-- .sidebar -->
+
+ </header>
 
   <!-- Content : Start -->
 
@@ -88,7 +152,7 @@
     });
   </script>
 
-  <div class="container pt-5">
+  <div class="container">
 
     <div class="row mt-5 mb-4">
 
@@ -104,7 +168,7 @@
           <h4>카카오페이 QR코드 모바일 링크(수신용) 생성 서비스</h4>
         </div>
 
-        <form id="inputForm" class="form-horizontal mb-3" method="POST" action="./process.php" enctype="multipart/form-data" role="form">
+        <!-- <form id="inputForm" class="form-horizontal mb-3" method="POST" action="./process.php" enctype="multipart/form-data" role="form">
           <div class="">
             <label class="file-upload btn btn-dark">
               1. 이미지 파일을 선택해 주세요 <input type="file" id="kakaopay_image" name="kakaopay_image" required />
@@ -113,11 +177,10 @@
             <a href="javascript:void(0)" onclick="pay()" class="btn btn-danger" style="margin-bottom:0.5rem;">
               <i class="fas fa-bolt"></i> 구입 및 다운로드
             </a>
-            <!-- <input type="submit" name="submit" value="2. 업로드 및 작업 진행" class="btn btn-danger" style="margin-bottom:0.5rem;"> -->
           </div>
-        </form>
+        </form> -->
 
-        <!-- <form id="inputForm" class="form-horizontal mb-3" method="POST" action="./process.php" enctype="multipart/form-data" role="form">
+        <form id="inputForm" class="form-horizontal mb-3" method="POST" action="./process.php" enctype="multipart/form-data" role="form">
 
           <div class="">
             <label class="file-upload btn btn-dark">
@@ -127,7 +190,7 @@
             <input type="submit" name="submit" value="2. 업로드 및 작업 진행" class="btn btn-danger" style="margin-bottom:0.5rem;">
           </div>
 
-        </form> -->
+        </form>
 
         <div class="mb-4 bg-light text-center col-lg-8 mx-auto">
           <div class="ajax-return">
@@ -141,14 +204,14 @@
 
         <div class="comment mb-4 text-center">
           <p>
-            <i class="fas fa-check"></i>
+            <i class="fas fa-info-circle"></i>
             <a href="https://www.mkttalk.com/kakaopay-qrcode/" target="_blank" style="text-decoration:none;">
               <b>카카오페이 QR코드 이미지 다운로드 방법</b> : 자세히 보기
             </a>
           </p>
-          <p>
+          <!-- <p>
             <i class="fas fa-check"></i> 본 서비스는 계정당 1회만 이용 가능합니다
-          </p>
+          </p> -->
         </div>
 
         <script type="text/javascript">
@@ -220,7 +283,7 @@
     </div>
 
     <div class="container footer-text text-center py-4 text-secondary">
-      © <span class="post-year"></span> <a class="text-secondary" href="https://www.desource.kr/" target="_blank"><b>디소스 (Desource)</b></a> | <a href="./../terms/" id="terms" target="_blank">이용약관</a> | <a href="./../privacy/" id="privacy" target="_blank">개인정보취급방침</a>
+      © <span class="post-year"></span> <a class="text-secondary" href="https://www.desource.kr/" target="_blank"><b>디소스 (Desource)</b></a> | <a href="./../../terms/" id="terms" target="_blank">이용약관</a> | <a href="./../../privacy/" id="privacy" target="_blank">개인정보취급방침</a>
     </div>
 
   </div>
@@ -232,9 +295,10 @@
   <a id="back-to-top" href="#" class="" title="Go To Top"><i class="fas fa-chevron-up"></i></a>
 
   <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
-  <script src="./assets/js/process-iamport.js"></script>
-    <!-- <script src="./assets/js/process-ajax.js"></script> -->
+  <script src="./assets/js/process-ajax.js"></script>
+  <script src="./assets/js/process-pay.js"></script>
   <script src="./../assets/js/main.js"></script>
+  <script src="./../../assets-layout/js/navbar.js"></script>
   <script src="./assets/js/file-upload.js"></script>
 
 </body>

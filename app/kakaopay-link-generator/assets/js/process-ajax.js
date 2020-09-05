@@ -12,14 +12,14 @@ jQuery(document).ready(function() {
       "</div>"
     );
 
-    var data = new FormData();
+    var form_data = new FormData();
     var files = jQuery('#kakaopay_image')[0].files[0];
-    data.append('kakaopay_image', files);
+    form_data.append('kakaopay_image', files);
 
     jQuery.ajax({
       url: "./process.php",
       type: 'POST',
-      data: data,
+      data: form_data,
       contentType: false,
       processData: false,
       success: function(response) {
