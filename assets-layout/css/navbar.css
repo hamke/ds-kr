@@ -52,6 +52,7 @@ button:focus,
 
 .navbar button {
   color: rgba(0, 0, 0, 0.4)!important;
+  outline: none;
 }
 
 .navbar .navbar-links {

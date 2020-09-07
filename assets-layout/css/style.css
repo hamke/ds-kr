@@ -33,23 +33,17 @@ button:focus,
     box-shadow: 0 0 0 0 rgba(0,123,255,0);
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #545861!important;
-  text-transform: none!important;
+.btn:focus {
+  outline: none!important;
+  box-shadow: none!important;
 }
 
-h1 {
-  font-size: 1.4rem!important;
-  letter-spacing: 2px;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  text-transform: none!important;
 }
 
 h3.widget-title {
   font-size: 1.1rem!important;
-}
-
-.btn:focus {
-  outline: none!important;
-  box-shadow: none!important;
 }
 
 #brand-image {
