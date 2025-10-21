@@ -57,8 +57,8 @@ jQuery(document).on('click',function(){
 
 function copyToClipboard(param){
 	var el =document.createElement('input');
-	document.body.appendChild(el)
-	el.value =param.textContent
+	document.body.appendChild(el);
+	el.value = param.textContent;
 	el.select();
 	document.execCommand('copy',false);
 	el.remove();

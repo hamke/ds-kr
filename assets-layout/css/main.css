@@ -6,6 +6,37 @@ body {
   line-height: 25px !important;
 }
 
+.adsense-section {
+  text-align: center;
+  margin: 0 10px auto;
+  margin-bottom: 40px;
+}
+.adsense-section .adsense-square-1 {
+  display:inline-block;
+  padding: 0.5em;
+}
+.adsense-section .adsense-square-2 {
+  display:inline-block;
+  padding: 0.5em;
+}
+.adsense-section .adsense-square-1 .adsbygoogle,
+.adsense-section .adsense-square-2 .adsbygoogle {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width:700px) {
+  .adsense-section .adsense-square-2 {
+    display: none;
+  }
+}
+
+.highlight,
+a.highlight {
+  text-decoration: none;
+  background: linear-gradient(to top, yellow 50%, rgba(255,255,255,0) 50%)!important;
+}
+
 /* .checked {
   color:yellow;
 }
